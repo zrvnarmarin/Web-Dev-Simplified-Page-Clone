@@ -145,6 +145,8 @@
     <style>
         .newsletter-section {
             background: #0d161b;
+            display: flex;
+            flex-direction: column;
         }
 
         .newsletter-section .title {
@@ -177,15 +179,40 @@
         }
         
         .newsletter-section .registration .name-input {
-
+            font-size: 1rem;
+            padding: 12px 20px;
+            color: rgb(26, 38, 45);
+            border: 1px solid rgba(26, 38, 45, 0.4);
+            outline: none;
+            border-radius: 4px;
+            background: rgb(255, 255, 255);
         }
 
         .newsletter-section .registration .email-input {
-
+            font-size: 1rem;
+            padding: 12px 20px;
+            color: rgb(26, 38, 45);
+            border: 1px solid rgba(26, 38, 45, 0.4);
+            outline: none;
+            border-radius: 4px;
+            background: rgb(255, 255, 255);
         }
 
         .newsletter-section .registration .join-button {
-            
+            appearance: none;
+            border: 0px;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            transition-duration: 0.35s;
+            outline: none;
+            font-size: 1rem;
+            padding: 12px 20px;
+            font-weight: 500;
+            border-radius: 4px;
+            background-color: rgb(0, 170, 255);
+            color: rgb(255, 255, 255);
         }
 
         .newsletter-section .warning {
