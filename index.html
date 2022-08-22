@@ -177,18 +177,6 @@
             gap: 10px;
             padding-bottom: 10px;
         }
-        @media (max-width: 900px) {
-            .newsletter-section .registration {
-                display: grid;
-                /* ovo je okej, ali kako postaviti min width?? */
-                grid-template-columns: repeat(auto-fit, minmax(min(28.125em, 50%), 50%));
-                min-width: 200px;
-            }
-
-            .newsletter-section .registration .join-button {
-            }
-
-        }
         
         .newsletter-section .registration .name-input {
             font-size: 1rem;
@@ -233,15 +221,183 @@
             text-align: center;
             padding-bottom: 40px;
         }
+
+        @media (max-width: 900px) {
+            .newsletter-section .registration {
+                display: grid;
+                /* ovo je okej, ali kako postaviti min width?? ako postavim min-width na childima, item naraste prema desno, ali nije centeriran!*/
+                grid-template-columns: repeat(auto-fit, minmax(min(28.125em, 50%), 80%));
+            }
+        }
     </style>
 
     <!-- Courses Section -->
     <section class="course-section">
-        
+
+        <div class="course">
+            <div class="image-section">
+                <img src="https://d31ezp3r8jwmks.cloudfront.net/piffdz02lkrxqw5rprcz50jkblk5">
+            </div>
+
+            <div class="text-section">
+                <h1>
+                    JavaScript Simplified
+                </h1>
+                <div class="description">
+                    The complete guide to JavaScript. Learn how to build JavaScript projects without getting stuck.
+                </div>
+                <div class="view-course">
+                    <button>View course</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course">
+            <div class="image-section">
+                <img src="https://d31ezp3r8jwmks.cloudfront.net/piffdz02lkrxqw5rprcz50jkblk5">
+            </div>
+
+            <div class="text-section">
+                <h1>
+                    JavaScript Simplified
+                </h1>
+                <div class="description">
+                    The complete guide to JavaScript. Learn how to build JavaScript projects without getting stuck.
+                </div>
+                <div class="view-course">
+                    <button>View course</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course">
+            <div class="image-section">
+                <img src="https://d31ezp3r8jwmks.cloudfront.net/piffdz02lkrxqw5rprcz50jkblk5">
+            </div>
+
+            <div class="text-section">
+                <h1>
+                    JavaScript Simplified
+                </h1>
+                <div class="description">
+                    The complete guide to JavaScript. Learn how to build JavaScript projects without getting stuck.
+                </div>
+                <div class="view-course">
+                    <button>View course</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course">
+            <div class="image-section">
+                <img src="https://d31ezp3r8jwmks.cloudfront.net/piffdz02lkrxqw5rprcz50jkblk5">
+            </div>
+
+            <div class="text-section">
+                <h1>
+                    JavaScript Simplified
+                </h1>
+                <div class="description">
+                    The complete guide to JavaScript. Learn how to build JavaScript projects without getting stuck.
+                </div>
+                <div class="view-course">
+                    <button>View course</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course">
+            <div class="image-section">
+                <img src="https://d31ezp3r8jwmks.cloudfront.net/piffdz02lkrxqw5rprcz50jkblk5">
+            </div>
+
+            <div class="text-section">
+                <h1>
+                    JavaScript Simplified
+                </h1>
+                <div class="description">
+                    The complete guide to JavaScript. Learn how to build JavaScript projects without getting stuck.
+                </div>
+                <div class="view-course">
+                    <button>View course</button>
+                </div>
+            </div>
+        </div>
+
     </section>
 
+    <style>
+        .course-section {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(500px, 100%), 1fr);
+           place-items: center;
+           gap: 50px;
+           margin-top: 40px;
+        }
 
+        .course {
+            max-width: 900px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
 
+        .course .image-section img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .course .text-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .course .text-section h1 {
+            font-weight: 500;
+            letter-spacing: 0em;
+            line-height: 1.25;
+            color: rgb(13, 22, 27);
+            font-size: 2rem;
+            text-align: start;
+            margin-bottom: 0;
+        }
+
+        .course .text-section .description {
+            color: rgb(13, 22, 27);
+            font-size: 1rem;
+            text-align: left;
+            font-weight: 400;
+            letter-spacing: 0em;
+            line-height: 1.75;
+        }
+
+        .course .text-section .view-course button {
+            appearance: none;
+            color: rgb(255, 255, 255);
+            border: 0px;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            transition-duration: 0.35s;
+            outline: none;
+            font-size: 1rem;
+            padding: 12px 20px;
+            font-weight: 500;
+            border-radius: 4px;
+            background-color: rgb(0, 170, 255);
+            text-decoration: none;
+        }
+
+        @media (max-width: 900px) {
+            .course {
+                grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+                margin: 0 20px;
+            }
+        }
+    </style>
 
 </body>
 </html>
