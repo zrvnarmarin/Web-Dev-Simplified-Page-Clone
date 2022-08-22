@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Header and navbar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="left-section">
+                <div class="logo">
+                    <a href="#">Web Dev Simplified</a>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <button>Login</button>
+            </div>
+
+        </nav>
+    </header>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 100px;
+
+            background-color: rgb(239, 239, 239);
+        }
+
+        .navbar .left-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .navbar .logo a {
+            align-self: center;
+            color: rgb(13, 22, 27);
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .navbar .left-section .logo a:hover {
+            border-bottom: 2px solid black;
+        }
+
+        .navbar .links ul {
+            display: flex;
+            flex: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .navbar .links ul li a {
+            font-weight: 400;
+            font-size: 1.1rem;
+            text-decoration: none;
+            line-height: 1.75;
+            color: rgb(13, 22, 27);
+            font-weight: 600;
+        }
+
+        .navbar .links ul li a:hover {
+            border-bottom: 1px solid black;
+        }
+
+        .navbar .right-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar .right-section button {
+            border: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition-duration: 0.35s;
+            outline: none;
+            font-size: 1rem;
+            padding: 8px 16px;
+            font-weight: 500;
+            border-radius: 4px;
+            background-color: rgb(0, 170, 255);
+            color: rgb(255, 255, 255);
+        }
+
+        .navbar .right-section button:hover {
+            box-shadow: rgba(0, 0, 0, 0.342) 0px 2px 8px 0px;
+        }
+    </style>
+
+    <!-- Newsletter section -->
+    <section class="newsletter-section">
+
+        <h1 class="title">
+            Stay Up To Date
+        </h1>
+        <div class="description">
+            Join my newsletter for up to date information on everything Web Dev Simplified as well as free tips and tutorials.
+        </div>
+        <div class="registration">
+            <input type="text" class="name-input" placeholder="Name">
+            <input type="text" class="email-input" placeholder="Email">
+            <button class="join-button">
+                Join Now
+            </button>
+        </div>
+        <div class="warning">
+            You're signing up to receive emails from Web Dev Simplified
+        </div>
+    </section>
+
+    <style>
+        .newsletter-section {
+            background: #0d161b;
+        }
+
+        .newsletter-section .title {
+            font-weight: 400;
+            letter-spacing: 0em;
+            line-height: 1.25;
+            color: rgb(255, 255, 255);
+            font-size: 2rem;
+            text-align: center;
+            padding: 40px 0 20px 0;
+            margin: 0;
+        }
+
+        .newsletter-section .description {
+            font-size: 1rem;
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            text-align: center;
+            padding: 0 0 30px 0;
+        }
+
+        .newsletter-section .registration {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .newsletter-section .registration .name-input {
+
+        }
+
+        .newsletter-section .registration .email-input {
+
+        }
+
+        .newsletter-section .registration .join-button {
+            
+        }
+
+        .newsletter-section .warning {
+            color: rgb(255, 255, 255);
+            font-size: 0.875rem;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+    </style>
+
+
+</body>
+</html>
