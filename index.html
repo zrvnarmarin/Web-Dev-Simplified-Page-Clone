@@ -108,7 +108,7 @@
             cursor: pointer;
             text-decoration: none;
             text-align: center;
-            transition-duration: 0.35s;
+            transition-duration: 0.1s;
             outline: none;
             font-size: 1rem;
             padding: 8px 16px;
@@ -147,8 +147,6 @@
     <style>
         .newsletter-section {
             background: #0d161b;
-            display: flex;
-            flex-direction: column;
         }
 
         .newsletter-section .title {
@@ -178,6 +176,18 @@
             align-items: center;
             gap: 10px;
             padding-bottom: 10px;
+        }
+        @media (max-width: 900px) {
+            .newsletter-section .registration {
+                display: grid;
+                /* ovo je okej, ali kako postaviti min width?? */
+                grid-template-columns: repeat(auto-fit, minmax(min(28.125em, 50%), 50%));
+                min-width: 200px;
+            }
+
+            .newsletter-section .registration .join-button {
+            }
+
         }
         
         .newsletter-section .registration .name-input {
